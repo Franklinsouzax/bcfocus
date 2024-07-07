@@ -5,7 +5,6 @@
 html{
     margin: 0;
     padding: 0;
-    background-color: var(--preto-);
     font-family: "Doppio One", sans-serif;
 }
 p{
@@ -189,7 +188,7 @@ p{
     font-family: "Open Sans", sans-serif;
 }
 
-                /*  QUEM SOMOS*/
+                /*QUEM SOMOS*/
 
 .quem-somos{
     background-color: var(--lilas-);
