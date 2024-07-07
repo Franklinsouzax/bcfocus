@@ -1,0 +1,101 @@
+                        /* COLUNAS */
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+      transform: translateY(30px); /* Inicia 30px abaixo da posição original */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Volta para a posição original */
+    }
+  }
+  
+  /* Estilo inicial dos ícones e parágrafos */
+  .icons i,
+  .icons p {
+    opacity: 0;
+    transform: translateY(30px); /* Inicialmente posicionado 30px abaixo */
+    transition: opacity 1s ease, transform 1s ease; /* Transição suave */
+  }
+  
+  /* Aplicar a animação quando a classe aparecer é adicionada */
+  .icons.aparecer i,
+  .icons.aparecer p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+                /* DESCRIÇÃO DA COLUNA */
+
+              
+/* Estilização dos artigos */
+
+/* Estilização dos títulos */
+.coluna h2,
+.coluna h3,
+.coluna p {
+    opacity: 0;
+    transform: translateY(20px); /* Começa 20px abaixo da posição original */
+    transition: opacity 1s ease, transform 1s ease; /* Transição suave */
+}
+
+/* Animação para o aparecimento dos elementos */
+.coluna.aparecer h2,
+.coluna.aparecer h3,
+.coluna.aparecer p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*CONLUNAS QUEM SOMOS*/
+
+/* Estilização dos parágrafos */
+.topicos-quem-somos{
+    overflow: hidden;
+}
+.topicos-quem-somos p {
+    opacity: 0; /* Começa invisível */
+    transform: translateX(100%); /* Começa fora da tela à direita */
+    transition: opacity 1s ease, transform 1s ease; /* Transição suave */
+
+}
+
+/* Classe para mostrar os parágrafos */
+.topicos-quem-somos p.mostrar {
+    opacity: 1; /* Torna visível */
+    transform: translateX(0); /* Move para a posição original */
+    
+}
+                /* QUEM SOMOS */
+    .quem-somos-detalhado {
+    opacity: 0; /* Começa invisível */
+    transition: opacity 1s ease; /* Transição suave de opacidade */
+}
+                
+    .quem-somos-detalhado.aparecer {
+    opacity: 1; /* Torna visível quando a classe aparecer é adicionada */
+}
+                /* ETAPAS */
+
+                .como-funciona {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;
+                }
+                
+                .coluna {
+                    flex: 1;
+                }
+                
+                .area-como-funciona {
+                    opacity: 0;
+                    transform: translateX(50px); /* Começa invisível e fora da tela */
+                    transition: opacity 0.8s ease, transform 0.8s ease;
+                }
+                
+                .area-como-funciona.aparecer {
+                    opacity: 1;
+                    transform: translateX(0); /* Move para a posição original ao aparecer */
+                }
+                

@@ -1,0 +1,612 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    margin: 0;
+    padding: 0;
+    background-color: var(--preto-);
+    font-family: "Doppio One", sans-serif;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --preto-: #080808;
+    --lilas-:#23194e;
+    --rosa-:#f5125e;
+    --azul-:#727ff1;
+    --cinza-:rgba(128, 128, 128, 0.493);
+    --laranja-:#C72E3B;
+}
+
+/*MOBILE*/
+.desktop{
+    display: none;
+}
+.mobile{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-bottom: 2%;
+    background-color: white;
+
+}
+
+.cursor{
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 9%;
+    margin-right: 2%;
+    cursor: pointer;
+   
+}
+.barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lilas-);
+    width: 100%;
+    height: 100%;
+    margin: 3%;
+}
+
+.topo{
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/src/img/bh.png);
+    background-size: cover;
+    background-position: right;
+    padding-bottom: 10%;
+  
+}
+.enunciado{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.enunciado h2{
+    text-align: right;
+    color: var(--laranja-);
+    font-size: 7vw;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    width: 75%;
+    margin-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 20%;
+    text-align: 3px 3px 3px black;
+}
+.btn{
+    background-color: var(--laranja-);
+    color: white;
+    padding: 4% 6%;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 4vw;
+    margin-right: 20%;
+}
+
+            /*PORQUE CONTRATAR*/
+
+.porque-contratar{
+    background-color:var(--rosa-);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 4%;
+}
+.titulo h2{
+    padding: 5%;
+    text-align: center;
+    color: white;
+    font-size: 4vw;
+    font-weight: 500;
+}
+.area-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    
+}
+.icons i{
+    color: rgb(250, 224, 224);
+    font-size: 20vh;
+    padding-bottom: 6%;
+}
+.icons p{
+    color: white;
+    font-size: 4vh;
+    width: 120%;
+ 
+}
+.titulo p{
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    width: 90%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+.area-colunas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.coluna{
+    border: 1px solid rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    border-radius: 10px;
+    margin: 2%;
+}
+.coluna h2{
+    text-align: center;
+    font-size: 5vw;
+    color: white;
+    padding: 5%;
+}
+.coluna h3{
+    align-self: flex-start;
+    padding: 0 2%;
+    font-size: 8vw;
+    color: white;
+}
+
+.coluna p{
+    font-size: 3vw;
+    padding: 5%;
+    font-weight: 400;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+                /*  QUEM SOMOS*/
+
+.quem-somos{
+    background-color: var(--lilas-);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+    font-family: "Open Sans", sans-serif;
+}
+.area-quem-somos{
+
+    margin-top: 5%;
+    width: 90%;
+    border-radius:15px ;
+    background-color: white;
+}
+.area-quem-somos h2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--laranja-);
+    color: white;
+    padding: 1%;
+    padding-left: 3%;
+    width: 96%;
+    border-radius: 12px 12px 0 0;
+    font-family: "Open Sans", sans-serif;
+  
+}
+.quem-somos p{
+    width: 90%;
+    padding: 3%;
+    font-size: 3.5vw;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
+.topicos-quem-somos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2% 0;
+    
+}
+.topicos-quem-somos p{
+    color: white    ;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+i{
+    color: var(--laranja-);
+}
+.area-quem-somos-detalhados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.quem-somos-detalhado{
+    border:2px solid #C72E3B;
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 2%;
+    color: white;
+    width: 80%;
+}
+
+.quem-somos-detalhado h2{
+    font-size: 4vw;
+    border-bottom: 2px solid #C72E3B;
+    width: 97%;
+    padding: 4% 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.quem-somos-detalhado span{
+    font-weight: 600;
+    font-size: 3.1vw;
+    color: white;
+}
+.quem-somos-detalhado i{
+    padding-left: 2%;
+}
+.quem-somos-detalhado p{
+    font-size: 3vw;
+    font-weight: 200;
+    font-family: "Open Sans", sans-serif;
+}
+            /**COMO FUNCIONA**/
+.espaco-como-funciona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.como-funciona{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2%;
+    padding-top: 2%;
+
+}
+
+.area-como-funciona{
+    background-color: var(--laranja-);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    min-height: 40vh;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+.titulo-como-funciona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3% 0;
+    color: var(--lilas-);
+    /* color: rgb(26, 25, 25); */
+    font-size: 3.5vw;
+    font-weight: 800;
+}
+.area-como-funciona h2{
+    text-align: left;
+    width: 80%;
+    font-weight: 6vw;
+    /* color: rgb(26, 25, 25); */
+    color: white;
+    padding: 2% 0;
+    font-weight: lighter;
+    
+}
+
+.area-como-funciona p{
+    text-align: left;
+    width: 80%;
+    padding: 5% 0;
+    font-size: 4.5vw;
+    font-weight: 200;
+    /* color: rgb(75, 74, 74); */
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+.area-como-funciona span{
+    font-size: 9vw;
+    font-weight: 800;
+}
+
+footer {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background: var(--lilas-);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+footer p{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 400;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    width: 80%;
+}
+.abaixo{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.esquerdo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}   
+.esquerdo p{
+    text-align: left;
+    width: 80%;
+    font-weight: 200;
+    
+}
+.direito{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.direito p{
+    text-align: end;
+    width: 80%;
+    font-weight: 200;
+}
+footer .nome{
+    font-size: 2.2vh;
+    font-weight: 400;
+}
+                            /* tablets e afins */
+@media (min-width: 768px) {
+
+    .mobile{
+        display:none;
+    }
+    .desktop{
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+    }    
+    nav{   
+        width: 95%;
+        padding: 1% 0;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        
+    }
+    li{
+
+        width: 30%;
+    }
+    li a{
+        text-decoration: none;
+        padding: 0 5%;
+    }
+    .topo{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+    .enunciado{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%; 
+        height: 100%;   
+        
+    }
+    .enunciado h2{
+       font-size: 5vw;
+       width: 100%;
+       padding-right: 1%;
+       padding-top: 15%;
+       padding-bottom: 5%;
+       
+    }
+  
+    .btn{
+        font-size: 1.5vw;
+        padding: 2% 3%;
+        margin-left:40%;
+        margin-top: 3%;
+    }
+
+    /*PORQUE CONTRATAR*/
+
+    .titulo h2{
+        font-size: 2.2vw;
+    }
+    .titulo p{
+        font-size: 2vw;
+    }
+    .area-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        flex: 1;
+    
+    }
+    .icons p{
+        text-align: center;
+        font-size: 1.5vw;
+    }
+    .coluna{
+        flex-wrap: wrap;
+   
+    }
+    .area-colunas{
+        flex-direction: row;
+    }
+    .coluna h3{
+        font-size:4vw;
+        padding: 0;
+        padding-left: 7%;
+    }
+    .coluna h2{
+        font-size: 2vw;
+        padding: 0;
+    }
+    .coluna p{
+        font-size: 1vw;
+     
+    }
+   .terceira{
+    font-size: 0.8vw ;
+   }
+                /* QUEM SOMOS */
+
+.quem-somos{
+    background: linear-gradient(to bottom, #f5125e 15%, #23194e 15%);
+}
+
+.area-quem-somos{
+    width: 50%;
+    box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.425);
+}
+.area-quem-somos h2{
+    font-size: 2vw;
+}
+.area-quem-somos p{
+    font-size: 2vw;
+}
+
+.topicos-quem-somos p{
+    font-size: 2vw;
+    padding: 1% 0;
+}
+.area-quem-somos-detalhados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  
+}
+.quem-somos-detalhado{
+   width: 40%;
+   margin: 1%;
+}
+.quem-somos-detalhado h2{
+    font-size: 1.4vw;
+    width: 106%;
+}
+.quem-somos-detalhado p
+{
+    font-size: 1.1vw;
+}
+.quem-somos-detalhado span{
+    font-size: 1.2vw;
+}
+.area-como-funciona-tres{
+    height: 50vh;
+}
+.dois p{
+    padding-bottom:5% ;
+}
+.tres p{
+    padding-top: 9.9%;
+}
+.tres .final {
+    
+    padding-bottom:21.9% ;
+}
+
+                /*COMO FUNCIONA*/
+.como-funciona{
+    display: flex;
+}
+.espaco-como-funciona{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.titulo-como-funciona h2{
+    font-size: 3vw;
+}
+.area-como-funciona{
+    width: 30%;
+}
+.area-como-funciona h2{
+    font-size: 2vw;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+.area-como-funciona span{
+    font-size: 4vw;
+    font-weight: 400;
+}
+.area-como-funciona p{
+    font-size: 1.2vw;
+}
+footer p{
+
+    font-size: 1.3vw;
+}
+}
