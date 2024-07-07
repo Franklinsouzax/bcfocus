@@ -61,7 +61,7 @@ p{
     align-items: center;
     background-image: url(/src/img/bh.png);
     background-size: cover;
-    background-position: right;
+    background-position: center;
     padding-bottom: 10%;
   
 }
@@ -134,12 +134,13 @@ p{
 }
 .icons i{
     color: rgb(250, 224, 224);
-    font-size: 20vh;
+    font-size: 10vh;
     padding-bottom: 6%;
 }
 .icons p{
+    text-align: center;
     color: white;
-    font-size: 4vh;
+    font-size: 3.8vh;
     width: 120%;
  
 }
