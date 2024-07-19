@@ -1,307 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BC focus</title>
-    <link rel="shortcut icon" href="/src/logo/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="/style.css">
-                <!-- ANIMATIONS -->
-    <link rel="stylesheet" href="/animations.css">
-                <!-- FONT AWSOME -->
-            <script src="https://kit.fontawesome.com/2b8010b65e.js" crossorigin="anonymous"></script>
-                <!-- FONT -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Doppio+One&display=swap" rel="stylesheet">
 
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+            <!-- META OG -->
+             <link rel="shortcut icon" href="/src/img/logo/logo.jpg" type="image/x-icon">
+             <meta name="description" content="Bc focus">
+             <meta name="keywords" content="Agência de Marketing Digital">
+    
+             <title>Bc Focus</title>
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="/estilo.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0
+    ,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,
+    600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+        <!-- FONT AWSOME -->
+        <script src="https://kit.fontawesome.com/2b8010b65e.js" crossorigin="anonymous"></script>
+
+        
 </head>
 <body>
     <header>
-        <div class="mobile">
-            <div class="cursor">
-                <div class="barra"></div>
-                <div class="barra"></div>
-                <div class="barra"></div>
-            </div>
-            <li>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+        <nav class="mobile" onclick="toggleMenu()">
+            <ul>
+                <li>
+                    <img src="/src/img/logo/logo vertical.png" alt="">
+                </li>
+                <li class="burguer" >
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                </li>
+            </ul>
+            <li id="list-mobile">
+                <a href="#porque-contratar">Porque contratar</a>
+                <a href="#quem-somos">Quem somos</a>
+                <a href="#etapas">Como funciona</a>
             </li>
-        </div>
-        <div class="desktop">
-            <nav>
-                <ul>
-                    <li>
-                        <p>Onfocus</p>
-                    </li>
-                    <li>
-                        <a href="">Estratégia</a>
-                        <a href="">Quem somos</a>
-                        <a href="">Etapas</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
+        <nav class="desktop">
+
+        </nav>
+        <script src="/src/script/mobile.js"></script>
+
+        <!-- Seção 1 -->
+        <section class="topo">
+            <h2>Você Sabia que </h2>
+            <p>
+            Empresas que utilizam estratégias de Marketing 
+            Digital têm, em média, um aumento de 2,8 vezes na 
+            receita em comparação com aquelas que não utilizam 
+            essas estratégias? 
+            </p>
+            <h2>Você sabia também que</h2>
+            <p>
+            65% dos cliques em anúncios pagos são oriundos de 
+            usuários que estão prontos para fazer uma compra, o 
+            que indica a eficácia dos anúncios pagos em atrair 
+            compradores em potencial?
+            </p>
+        </section>
     </header>
     <main>
-        <section class="topo">
-            <article class="enunciado">
-                <h2>
-                    E por que contratar uma Agência de Marketing Digital?
-                </h2>
-                <a href="" class="btn">Saiba mais</a>
-            </article>
+                    <!-- Sessão 2 -->
+        <section class="porque-contratar" id="porque-contratar">
+           <h2> E por que contratar uma Agência de <span>Marketing Digital?</span></h2>
+
+            <p>
+            Contratar uma agência de marketing digital pode ser a chave 
+            para potencializar as vendas, aumentar o seu faturamento e 
+            <span>levar sua empresa para o próximo nível!</span>
+            </p>
+            <p class="sublinhado">
+                Aqui estão <span>três razões</span> para você considerar essa parceria
+            </p>
         </section>
-        <section class="porque-contratar">
-            <article class="titulo">
-                <h2>E por que contratar uma Agência de Marketing Digital?</h2>
-                <p>
-                    Contratar uma agência de marketing digital pode ser a chave 
-                    para potencializar as vendas, aumentar o seu faturamento e 
-                    levar sua empresa para o próximo nível
-                </p>
-            </article>
-           <div class="area-icons">
-            <article class="icons">
-                <i class="fa-solid fa-bullseye"></i>
-                <p>
-                    Conhecimento Atualizado
-                </p>
-            </article>
-
-            <article class="icons">
-                <i class="fa-solid fa-clock-rotate-left"></i>
-                <p>
-                    Economia de Tempo
-                </p>
-            </article>
-
-            <article class="icons">
-                <i class="fa-solid fa-chart-line"></i>
-                <p>
-                    Resultados Mensuráveis
-                </p>
-            </article>
-            <script src="/src/script/icons.js"></script>
-           </div>
-                        <!-- COLUNAS -->
-          <article class="area-colunas">
-            <article class="coluna">
-                <h3>01</h3>
-                <h2>Expertise Especializada e Conhecimento Atualizado</h2>
+                <!-- Sessão 3 -->
+        <section class="porque-contratar-2">
+            <article class="area-topicos" >
+                <img src="/src/img/icon/experiencia.png" alt="">
+                <h2><span class="number"> 1°</span>
+                    Expertise Especializada e 
+                    Conhecimento Atualizado </h2>
                 <p>
                     No dinâmico mundo do marketing digital, estar atualizado com as últimas tendências e
-                    tecnologias é essencial para o sucesso. As agências de marketing digital são formadas por
-                    profissionais especializados que são apaixonados pelo que fazem.
-                </br></br>
-                    Eles não apenas acompanham de perto as mudanças no mercado, mas também adotam as
-                    melhores práticas e utilizam ferramentas avançadas para garantir que suas campanhas sejam
-                    sempre eficazes.
-                </br></br>
+                tecnologias é essencial para o sucesso. As agências de marketing digital são formadas por
+                profissionais especializados que são apaixonados pelo que fazem.
+                </p>
+                <p>
+                Eles não apenas acompanham de perto as mudanças no mercado, mas também adotam as
+                melhores práticas e utilizam ferramentas avançadas para garantir que suas campanhas sejam
+                sempre eficazes.
+                </p>
+                <p>
                     Com uma agência ao seu lado, você tem a certeza de estar na vanguarda das oportunidades no
                     ambiente digital em constante evolução
                 </p>
             </article>
-
-            <article class="coluna ">
-                <h3>02</h3>
-                <h2>Economia de Tempo e Recursos</h2>
+            <article class="area-topicos">
+                <img src="/src/img/icon/tempo.png" alt="">
+                <h2><span class="number"> 2°</span> Economia de Tempo e Recursos</h2>
                 <p>
-                    Gerenciar campanhas de marketing digital internamente pode ser desafiador e demandar
-                    recursos significativos. Ao contratar uma agência, sua equipe se liberta para focar nas áreas
-                    cruciais do negócio.
-                </br></br>
+                Gerenciar campanhas de marketing digital internamente pode ser desafiador e demandar
+                recursos significativos. Ao contratar uma agência, sua equipe se liberta para focar nas áreas
+                cruciais do negócio.
+                </p>
+                <p>
                 Enquanto isso, especialistas dedicados cuidam de todas as necessidades de marketing
-                digital, desde estratégias até execução e monitoramento
-                </br></br>
-                sso não só otimiza o tempo e recursos, mas também permite um crescimento sustentável,
-                concentrando-se no que realmente importa para o sucesso da sua empresa.
+                digital, desde estratégias até execução e monitoramento.
+                </p>
+                <p>
+                Isso não só otimiza o tempo e recursos, mas também permite um crescimento sustentável,
+                concentrando-se no que realmente importa para o sucesso da sua empresa
                 </p>
             </article>
-
-            <article class="coluna terceira">
-                <h3>03</h3>
-                <h2>Resultados Mensuráveis e Otimização Contínua</h2>
+            <article class="area-topicos">
+                <img src="/src/img/icon/graficos.png" alt="">
+                <h2><span class="number"> 3°</span>Resultados Mensuráveis e Otimização Contínua 
+                Economia de Tempo e Recursos</h2>
                 <p>
-                    Trabalhar com uma agência de marketing digital oferece a vantagem crucial de medir e analisar
-                    o desempenho das campanhas em tempo real.
-                </br></br>
+                Trabalhar com uma agência de marketing digital oferece a vantagem crucial de medir e analisar
+                o desempenho das campanhas em tempo real.
+                </p>
+                <p>
                 Utilizando ferramentas analíticas avançadas, as agências fornecem insights detalhados sobre
                 cada aspecto das suas campanhas. Isso possibilita ajustes rápidos e otimizações contínuas,
                 garantindo que você maximize constantemente o retorno sobre seu investimento (ROI).
-                </br></br>
                 Com relatórios transparentes e dados precisos, você pode monitorar o impacto das suas
                 iniciativas de marketing e tomar decisões estratégicas informadas para impulsionar o
-                crescimento do seu negócio.
+                crescimento do seu negócio
                 </p>
             </article>
-            <script src="/src/script/descricao.js"></script>
-          </article>
-        </section>
-        <section class="quem-somos">
+        <section class="quem-somos" id="quem-somos">
             <article class="area-quem-somos">
-                <h2>Quem Somos</h2>
-            <p> Somos uma Agência de Marketing Digital, 
-                localizada em Piracicaba 100% remota 
-                especializada no Tráfego Pago, Estratégias 
-                Digitais e Vendas Online.
-            </p>
+                        <h2>Quem Somos</h2>
+                       <p>
+                        Somos uma <span>Agência de Marketing Digital</span>, 
+                        localizada em Piracicaba 100% remota 
+                        <span>especializada no Tráfego Pago</span>, Estratégias 
+                        Digitais e Vendas Online.
+                       </p>
+                       <article class="area-icon">
+                        <div style="background-image: url(/src/img/imagens/gestao.png);" class="card-quem-somos">
+                            <h2>
+                                Gestão de Redes Sociais
+                            </h2>
+                        </div>
+                        <div style="background-image: url(/src/img/imagens/google.jpg);" class="card-quem-somos">
+                            <h2>
+                                Marketing de Conteúdo
+                            </h2>
+                        </div>
+                        <div style="background-image: url(/src/img/imagens/ads.png);" class="card-quem-somos">
+                            <h2>
+                                Gestão de Tráfego Pago
+                            </h2>
+                        </div> 
+                       </article>
             </article>
-            <article class="topicos-quem-somos">
-                <p><i class="fa-solid fa-bullseye"></i> Gestão de Redes Sociais</p>
-                <p><i class="fa-solid fa-timeline"></i> Marketing de Conteúdo</p>
-                <p><i class="fa-solid fa-chart-line"></i> Gestão de Tráfego Pago</p>
-                
-            </article>
-            
-            <script src="/src/script/quem-somos.js"></script>
+            <article class="nossos-servicos" >
+                    <h2>Nossos Serviços</h2>
 
-            <div class="area-quem-somos-detalhados">
-                <article class="quem-somos-detalhado">
-                    <h2>Gestão de Redes Sociais  <i class="fa-solid fa-bullseye"></i></h2>
-                    <p>
-                        Gerenciamento de redes sociais é o processo de criar, publicar, analisar e interagir com o conteúdo 
-                        postado nas plataformas de redes sociais de uma marca ou empresa. 
-                    </p>
-                    <p>
-                        Envolve a administração das contas de redes sociais para aumentar a visibilidade online, engajar o 
-                    público-alvo e construir uma comunidade em torno da marca.
-                    </p>
-                    <p>
-                        <span>
-                            Principais Tarefas do Gerenciamento de Redes Sociais:
-                        </span>
-                    </p>
-                       <p> Criação de Conteúdo</br>
-                        Planejamento e Agendamento</br>
-                        Interação com o Público</br>
-                        Monitoramento de Métricas</br>
-                        Análise e Relatórios</br>
-                        Gestão de Comunidade</br>
-                        Publicidade em Redes Sociais</br>
-                    </p>
-                </article>
-    
-                <article class="quem-somos-detalhado dois">
-                    <h2>Marketing de Conteúdo <i class="fa-solid fa-timeline"></i> </h2>
-                    <p>
-                        Marketing de Conteúdo é uma estratégia que cria e distribui conteúdo valioso e relevante para atrair e 
-                        engajar um público-alvo específico. 
-                    </p>
+                    <h2>Gestão de Redes Sociais</h2>
                    <p>
-                    O objetivo é gerar ações lucrativas, fornecendo informações úteis que resolvam problemas ou atendam às 
-                    necessidades do público, em vez de promover diretamente produtos ou serviços. 
-                   </br></br>
-                    Isso ajuda a estabelecer confiança e autoridade com a marca.
+                    Gerenciamento de redes sociais é o processo de criar, publicar, analisar e interagir com o conteúdo 
+                    postado nas plataformas de redes sociais de uma marca ou empresa. 
                    </p>
-                  <p>
-                    <span>
-                        Isso pode incluir:
-                    </span>
-                  </p>
-                   <p> Artigos de blog, vídeos, infográficos, e-books, White pagers, podcasts, posts em redes sociais, etc</p>
-                </article>
-    
-                <article class="quem-somos-detalhado tres">
-                    <h2>Gestão de Tráfego Pago  <i class="fa-solid fa-chart-line"></i></h2>
-                <p>
-                    Gestão de Tráfego Pago é o processo de planejar, implementar e otimizar campanhas de publicidade online 
-                    pagas para direcionar visitantes qualificados a um site, página de destino ou aplicativo. 
-                </p>
+                   <p>
+                    Envolve a administração das contas de redes sociais para aumentar a visibilidade online, engajar o 
+                    público-alvo e construir uma comunidade em torno da marca.
+                   </p>
+                    <h2 class="subtitulo">Principais Tarefas do Gerenciamento de Redes Sociais:</h2>
+                    <li>Criação de Conteúdo</li>
+                    <li>Planejamento e Agendamento</li>
+                    <li>Interação com o Público</li>
+                    <li>Monitoramento de Métricas</li>
+                    <li>Análise e Relatórios</li>
+                    <li>Gestão de Comunidade</li>
+                    <li>Publicidade em Redes Sociais</li>
+
+                    <h2 class="subtitulo">Marketing de Conteúdo</h2>
+
                     <p>
-                        <span>
+                    Marketing de Conteúdo é uma estratégia que cria e distribui conteúdo valioso e relevante para atrair e 
+                    engajar um público-alvo específico. 
+                    </p>
+                    <p>
+                    O objetivo é gerar ações lucrativas, fornecendo informações úteis que resolvam problemas ou atendam às 
+                    necessidades do público, em vez de promover diretamente produtos ou serviços.     
+                    </p>
+                    <p>
+                    Isso ajuda a estabelecer confiança e autoridade com a marca.
+                    </p>
+                    <h2 class="subtitulo">Isso pode incluir:</h2>
+                    <p>
+                    Artigos de blog, vídeos, infográficos, e-books, White pagers, podcasts, posts em redes sociais, etc.
+                    </p>
+
+                    <h2>Gestão de Tráfego Pago</h2>
+                    <p>
+                        Gestão de Tráfego Pago é o processo de planejar, implementar e otimizar campanhas de publicidade online 
+                        pagas para direcionar visitantes qualificados a um site, página de destino ou aplicativo. 
+                       </p>
+                        <h2 class="subtitulo">
                             Esta prática envolve o uso de várias plataformas de publicidade, como:
-                        </span>
-                    </p>
-                       <p class="final">
-                        Google Ads</br>
-                        Facebook Ads</br>
-                        Instagram Ads</br>
-                        LinkedIn Ads</br>
-                        Tiktok Ads</br>
-                    </p>
-                </article>
-                <script src="/src/script/quem-somos-detail.js"></script>
-            </div>
+                        </h2>
+                        <li>Google Ads</li>
+                        <li>Facebook Ads</li>
+                        <li>Instagram Ads</li>
+                        <li>LinkedIn Ads</li>
+                        <li>Tiktok Ads</li>
+            </article>
         </section>
-        <section class="como-funciona">
-            <article class="titulo-como-funciona">
-                <h2>Como funciona o no nosso trabalho</h2>
-            </article>
-           <div class="espaco-como-funciona">
-            <article class="area-como-funciona">
-                <h2><span>1°</span> Etapa</h2>
-                <p>
-                    Reunião de Briefing
+                    <!-- Sessão final -->
+        <section class="etapas" id="etapas">
+            
+            <article  class="area-etapas">
+                <h2>1° Etapa</h2>
+                <p>Reunião de Briefing
                     Entendendo a Necessidade
-                    Desejos e Expectativas
-                </p>
-            </article>
-            <article class="area-como-funciona">
-                <h2><span>2°</span> Etapa</h2>
+                    Desejos e Expectativas</p>
+                
+                <h2>2° Etapa</h2>
                 <p>
                     Apresentação Proposta
                     Personalizada a Necessidade
-                    do Cliente
-                    
+                    do Cliente   
                 </p>
-            </article>
-            <article class="area-como-funciona">
-                <h2><span>3°</span> Etapa</h2>
+                <h2>3° Etapa</h2>
                 <p>
                     Reunião Kick Off
                     Onbourding
                     Definição Escopos
-                    
                 </p>
-            </article>
-            <article class="area-como-funciona">
-                <h2><span>4°</span> Etapa</h2>
+                
+                <h2>4° Etapa</h2>
                 <p>
                     Início dos Trabalhos
                     Startup
                 </p>
-            </article>
-            <article class="area-como-funciona">
-                <h2><span>5°</span> Etapa</h2>
+                <h2>5° Etapa</h2>
                 <p>
                     Apresentação de Resultados
-                    Otimização | Relatórios
+                    Otimização | Relatório
                 </p>
-            </article>
-            <article class="area-como-funciona">
-                <h2><span>6°</span> Etapa</h2>
+                
+                <h2>6° Etapa</h2>
                 <p>
                     Medições dos Trabalhos
                     e Definição Próximos passos
-
                 </p>
             </article>
-            <script src="/src/script/Etapas.js"></script>
-           </div>
+        </section>
         </section>
     </main>
     <footer>
-        <p>Desenvolvido por Franklin Leão da agência Kinger para BcFocus &copy; 2024</p>
-        <section class="abaixo">
-            <article class="esquerdo">
-                <p class="nome">Bruno Cerqueira</p>
-                <p>Diretor Comercial</p>
-                <p>(19) 9 9617-3019</p>
-                <p>E-mail: agenciabcfocus@gmail.com</p>
-            </article>
-            <article class="direito">
-                <p>Endereço: Rua Pará 99, Bairro Verde</p>
-                <p>Piracicaba SP</p>
-                <p>CEP: 13424-384</p>
-            </article>
-        </section>
+        <p>
+            &copy; 2024 Bc Focus. Todos os direitos reservados.-Desenvolvido por Franklin Souza da Agência Kinger.
+        </p>
+        <article class="direito" >
+            <h2>Bruno Cerqueira</h2>
+            <p><span>Diretor Comercial</span></p>
+            <p>(19) 9 9617-3019</p>
+            <p><span>Endereço:</span> Rua Pará 99 – Bairro Verde</p>
+            <p >Piracicaba SP</p>
+            <p><span>CEP:</span> 13424-384</p>
+            <p><span>E-mail:</span> agenciabcfocus@gmail.com</p>
+            <p><span>Site: </span>agenciabcfocus.com.br</p>
+        </article>
+        <article class="redessociais">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-solid fa-globe"></i></a>
+        </article>
     </footer>
 </body>
 </html>
