@@ -15,10 +15,10 @@ html{
 }
                 /* MOBILE */
 p{
-    font-size: 3.4vw;
+    font-size: 4.4vw;
 }
 h2{
-    font-size: 5vw;
+    font-size: 5.8vw;
 }
 .desktop{
     display: none;
@@ -113,6 +113,12 @@ ul{
     padding-top: 12%;
     padding-bottom: 18%;
 }
+.area-topo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .topo h2,
 .topo p{
     text-align: center;
@@ -185,14 +191,14 @@ ul{
     color: var(--laranja);
 }
 .area-topicos h2{
-    font-size: 4vw;
+    font-size: 6vw;
     padding-bottom: 2%;
     color: var(--azul);
 
 }
 
 .area-topicos p{
-    font-size: 2.8vw;
+    font-size: 4.3vw;
     padding-bottom: 2%;
 }
 
@@ -245,7 +251,7 @@ ul{
     margin: 1%;
 }
 .card-quem-somos h2{
-    font-size: 3vw;
+    font-size: 3.2vw;
     color: var(--branco);
 }
 .nossos-servicos{
@@ -350,4 +356,158 @@ footer p{
 }
 .redessociais a{
     color: var(--laranja);
+}
+
+                        /*-------------------DESKTOP--------------------*/
+
+@media (min-width: 720px){
+
+
+.mobile{
+    display: none;
+}
+
+.desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+
+}
+.desktop li { 
+    width: 26vw;
+}
+.desktop a{
+    font-size: 1vw;
+    text-decoration: none;
+    color: #F75B22;
+    margin: 0 1%;
+    font-weight: 600;
+}
+
+.topo{
+    width: 100%;
+    padding: 0;
+    height: 100%;
+}
+.area-topo{
+    width: 55%;
+    align-self: flex-start;
+    padding: 3% 0;
+}
+.topo h2{
+    font-size: 2.2vw;
+    
+}
+.topo p{
+    font-size: 1.3vw;
+}
+
+.porque-contratar{
+
+    padding: 3% 0;
+}
+.porque-contratar h2{
+    font-size: 2.8vw;
+    width: 50%;
+    padding: 0;
+    padding-bottom: 5%;
+}
+.porque-contratar p{
+    font-size: 2vw;
+}
+.area-topicos{
+ 
+    width: 20%;
+    min-height: 43vw;
+    margin: 1%;
+
+}
+.area-topicos img{
+    width: 40%;
+    padding: 3%;
+}
+.number{
+    font-size: 3vw;
+}
+.area-topicos h2{
+    font-size: 1.3vw;
+}
+.area-topicos p{
+    padding: 0;
+    margin: 0;
+    font-size: .9vw;
+}
+.area-quem-somos{
+    padding: 1% 0;
+}
+.area-quem-somos h2{
+    padding-top: 1vw;
+    font-size: 2.8vw;
+}
+.area-quem-somos p{
+    font-size: 1.8vw;
+    width: 50%;
+}
+
+.nossos-servicos h2{
+    font-size: 2vw;
+    width: 50%;
+    padding-bottom: 1.2vw;
+}
+.nossos-servicos p{
+    font-size: 1.4vw;
+    width: 70%;
+}
+.nossos-servicos li{
+    font-size: 1.4vw;
+    padding: .1%;
+}
+
+.nossos-servicos .subtitulo{
+    font-size: 1.4vw;
+    padding: 0;
+}
+.etapas{
+    width: 100%;
+    padding: 3%;
+}
+.area-etapas{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.etapas h2{
+    font-size: 2.6vw;
+}
+.etapas p{
+    font-size: 1.6vw;
+    padding: 1% 0;
+    
+}
+footer p{
+    font-size: 1vw;
+}
+footer h2{
+  font-size: 1.4vw;
+}
+.direito{
+    padding: 0;
+}
+.direito h2{
+    font-size: 1.8vw;
+}
+.redessociais{
+    font-size: 3vw;
+    padding-bottom: 2%;
+}
 }
