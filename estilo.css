@@ -9,7 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 :root{
-    --laranja: #F75B22;
+    --laranja: #f54707;
     --branco: #fff;
     --azul:#002A43;
 }
@@ -63,14 +63,13 @@ ul{
     text-decoration: none;
     text-transform: uppercase;
     padding: 5% 0;
-    color: orangered;
+    color: var(--laranja);
     width: 100%;
     text-align: center;
 }
 .burguer{   
     width: 18vw;
     padding: 1%;
-    background-color: var(--laranja);
     height: 5vw;
     padding: 1%;
     cursor: pointer;
@@ -84,18 +83,16 @@ ul{
 }
 
 .barra{
-    background-color: white;
+    background-color: var(--azul);
     height: 100%;
     margin: 2.6%;
-    width: 90%;
+    width: 142%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.logoname{
-    color: orange;
-}
+
 .logoname span{
     font-weight: 800;
 }
@@ -112,6 +109,7 @@ ul{
     flex-direction: column;
     padding-top: 12%;
     padding-bottom: 18%;
+    background-image: url(/src/img/bg/bg-topo.png);
 }
 .area-topo{
     display: flex;
@@ -214,6 +212,9 @@ ul{
     padding-bottom: 6%;
     padding-top: 11%;
     background: linear-gradient(to bottom,#002A43,#001F32);
+    background-image: url(/src/img/bg/bg1.png);
+    background-size: cover;
+    background-position: right;
     
 }
 .area-quem-somos h2{
@@ -271,7 +272,8 @@ ul{
     color: var(--azul);
 }
 .nossos-servicos li{
-    font-size: 3vw;
+    font-size: 3.7vw;
+    padding: 1%;
 }
 .nossos-servicos .subtitulo{    
     padding: 3% 0;
@@ -288,6 +290,9 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;  
+    background-image: url(/src/img/bg/bg-etapas.png);
+    background-size: cover;
+    background-position: right;
     
 }
 .area-etapas{
@@ -372,6 +377,8 @@ footer p{
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 1% 0;
+    
 }
 ul{
     display: flex;
@@ -381,10 +388,10 @@ ul{
 
 }
 .desktop li { 
-    width: 26vw;
+    width: 31vw;
 }
 .desktop a{
-    font-size: 1vw;
+    font-size: 1.2vw;
     text-decoration: none;
     color: #F75B22;
     margin: 0 1%;
@@ -395,6 +402,10 @@ ul{
     width: 100%;
     padding: 0;
     height: 100%;
+    background-image: url(/src/img/bg/bg-topo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .area-topo{
     width: 55%;
@@ -414,13 +425,15 @@ ul{
     padding: 3% 0;
 }
 .porque-contratar h2{
-    font-size: 2.8vw;
-    width: 50%;
+    font-size: 2vw;
+    width: 45%;
     padding: 0;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
 }
 .porque-contratar p{
-    font-size: 2vw;
+    width: 70%;
+    font-size: 1.4vw;
+    padding: 1%;
 }
 .area-topicos{
  
@@ -457,16 +470,18 @@ ul{
 }
 
 .nossos-servicos h2{
-    font-size: 2vw;
+    font-size: 1.8vw;
     width: 50%;
     padding-bottom: 1.2vw;
 }
 .nossos-servicos p{
-    font-size: 1.4vw;
-    width: 70%;
+    font-size: 1.2vw;
+    width: 50%;
+    font-weight: 400;
+    padding: 1%;
 }
 .nossos-servicos li{
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     padding: .1%;
 }
 
@@ -474,7 +489,32 @@ ul{
     font-size: 1.4vw;
     padding: 0;
 }
+
+.caixa1{
+    background-image: url(/src/img/bg/bg-redes-sociais.png);
+    background-size: contain;
+    background-position: left;
+    padding: 1% 5%;
+    background-repeat: no-repeat;
+}
+
+.caixa2{
+   
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    text-align: end;
+    padding: 1% 10%;
+    background-image: url(/src/img/bg/bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .etapas{
+    background-image: url(/src/img/bg/bg-etapas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     padding: 3%;
 }
@@ -487,10 +527,10 @@ ul{
     flex-direction: column;
 }
 .etapas h2{
-    font-size: 2.6vw;
+    font-size: 2vw;
 }
 .etapas p{
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     padding: 1% 0;
     
 }
