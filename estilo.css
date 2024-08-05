@@ -144,6 +144,7 @@ border-radius: 10px;
 color: var(--branco);
 text-decoration: none;
 transition: all 0.1s ease-in;
+font-size: 3.6vw;
 } 
 .button:hover{
     padding: 1.1% 3.4%;
@@ -503,6 +504,9 @@ ul{
 .area-quem-somos p{
     font-size: 1.8vw;
     width: 50%;
+}
+.button{
+    font-size: 1.4vw;
 }
 
 .nossos-servicos h2{
