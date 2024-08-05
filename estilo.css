@@ -126,6 +126,59 @@ ul{
 .topo h2{
     color: var(--laranja);
 }
+/*ANIMAÇÃO DO TEXTO INICIAL*/
+
+.area-topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(50px); /* Inicialmente deslocado para baixo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animação suave */
+}
+
+.area-topo.visible {
+    opacity: 1; /* Visível quando a classe 'visible' é adicionada */
+    transform: translateY(0); /* Move o elemento para a posição original */
+}
+
+/* Inicialmente invisível e com animação de transição */
+.area-topo h2,
+.area-topo p {
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Inicialmente deslocado para baixo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Animação para cada h2 e p com delays apropriados */
+.area-topo.visible h2:nth-of-type(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s; /* Delay para o primeiro h2 */
+}
+
+.area-topo.visible p:nth-of-type(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s; /* Delay para o primeiro p */
+}
+
+.area-topo.visible h2:nth-of-type(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1s; /* Delay para o segundo h2 */
+}
+
+.area-topo.visible p:nth-of-type(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.4s; /* Delay para o segundo p */
+}
+
+
+
+/**FIM DA ANIMÇÃO DO TEXTO**/
 .botao{
     display: flex;
     justify-content: center;
@@ -306,40 +359,104 @@ font-size: 3.6vw;
 
 
             /* ETAPAS */
-.etapas{
-    /* border: 1px solid red; */
-    background-color: var(--azul);
-    padding-top: 2%;
-    padding-bottom: 2%;  
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    background-image: url(/src/img/bg/bg-etapas.png);
-    background-size: cover;
-    background-position: right;
-    
-}
-.area-etapas{
-    padding: 10%;
-}
-.etapas h2{
-    color: var(--laranja);
-    font-weight: 800;
-    padding-left: -10%; 
-    z-index: 2;
-    display: flex;
-
-}
-.area-etapas p{
-    color: var(--branco);
-    padding: 3% 0;  
-    margin-left: 5%;
-    display: flex;
-    justify-content: left;
-    text-align: left;
-    align-self: flex-start; 
-}
-
+            .etapas {
+                background-color: var(--azul);
+                padding-top: 2%;
+                padding-bottom: 2%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url(/src/img/bg/bg-etapas.png);
+                background-size: cover;
+                background-position: right;
+            }
+            
+            /* Contêiner dos elementos */
+            .area-etapas {
+                padding: 10%;
+            }
+            
+            /* Estilo inicial para h2 e p */
+            .etapas h2,
+            .area-etapas p {
+                opacity: 0; /* Inicialmente invisível */
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
+            
+            /* Cor e estilo do h2 */
+            .etapas h2 {
+                color: var(--laranja); /* Cor do texto */
+                transform: translateY(20px); /* Move para baixo inicialmente */
+            }
+            
+            /* Cor e estilo do p */
+            .area-etapas p {
+                color: var(--branco); /* Cor do texto */
+                transform: translateX(20px); /* Move para a direita inicialmente */
+            }
+            
+            /* Quando a seção está visível, aplica a animação */
+            .etapas.visible h2 {
+                opacity: 1;
+                transform: translateY(0); /* Move para a posição original */
+            }
+            
+            .etapas.visible p {
+                opacity: 1;
+                transform: translateX(0); /* Move para a posição original */
+            }
+            
+            /* Delay específico para cada h2 */
+            .etapas.visible h2:nth-of-type(1) {
+                transition-delay: 0.2s;
+            }
+            
+            .etapas.visible h2:nth-of-type(2) {
+                transition-delay: 1s;
+            }
+            
+            .etapas.visible h2:nth-of-type(3) {
+                transition-delay: 1.8s;
+            }
+            
+            .etapas.visible h2:nth-of-type(4) {
+                transition-delay: 2.6s;
+            }
+            
+            .etapas.visible h2:nth-of-type(5) {
+                transition-delay: 3.4s;
+            }
+            
+            .etapas.visible h2:nth-of-type(6) {
+                transition-delay: 4.2s;
+            }
+            
+            /* Delay específico para cada p, ajustado após o h2 correspondente */
+            .etapas.visible p:nth-of-type(1) {
+                transition-delay: 0.8s;
+            }
+            
+            .etapas.visible p:nth-of-type(2) {
+                transition-delay: 1.6s;
+            }
+            
+            .etapas.visible p:nth-of-type(3) {
+                transition-delay: 2.4s;
+            }
+            
+            .etapas.visible p:nth-of-type(4) {
+                transition-delay: 3.2s;
+            }
+            
+            .etapas.visible p:nth-of-type(5) {
+                transition-delay: 4s;
+            }
+            
+            .etapas.visible p:nth-of-type(6) {
+                transition-delay: 4.8s;
+            }
+            
+            
         /* FOOTER */
 footer{
     display: flex;
@@ -387,6 +504,13 @@ footer p{
     color: var(--laranja);
 }
 
+/*------------- LINKS ANIMAÇÕES *---------------------/
+
+
+
+
+/*------------- FIM LINKS ANIMAÇÕES *---------------------/
+
                         /*-------------------DESKTOP--------------------*/
 
 @media (min-width: 720px){
@@ -414,13 +538,35 @@ ul{
 .desktop li { 
     width: 31vw;
 }
-.desktop a{
+.desktop a {
     font-size: 1.2vw;
     text-decoration: none;
     color: #F75B22;
     margin: 0 1%;
     font-weight: 600;
+    display: inline-block; 
+    border-bottom: 2px solid transparent;
+    position: relative;     
+    overflow: hidden;
 }
+
+.desktop a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: #045283;
+    transform: translateX(-50%) scaleX(0); 
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.desktop a:hover::before {
+    transform: translateX(-50%) scaleX(1); 
+}
+
 
 .topo{
     width: 100%;
@@ -489,7 +635,6 @@ ul{
     flex-direction: column;
     width: 100%;
     padding: 1% 3%;
-  
 }
 
 .area-quem-somos{
