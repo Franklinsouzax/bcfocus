@@ -9,6 +9,8 @@ html{
     scroll-behavior: smooth;
 }
 :root{
+    --verde: #19a520;
+    --laranja-claro:#ff632b;
     --laranja: #f54707;
     --branco: #fff;
     --azul:#002A43;
@@ -19,6 +21,7 @@ p{
 }
 h2{
     font-size: 5.8vw;
+    padding: 0 2%;
 }
 .desktop{
     display: none;
@@ -63,7 +66,8 @@ ul{
     text-decoration: none;
     text-transform: uppercase;
     padding: 5% 0;
-    color: var(--laranja);
+    color: var(--laranja); 
+
     width: 100%;
     text-align: center;
 }
@@ -124,7 +128,7 @@ ul{
     padding-bottom: 4%;
 }
 .topo h2{
-    color: var(--laranja);
+    color: var(--laranja-claro);
 }
 /*ANIMAÇÃO DO TEXTO INICIAL*/
 
@@ -177,8 +181,6 @@ ul{
 }
 
 
-
-/**FIM DA ANIMÇÃO DO TEXTO**/
 .botao{
     display: flex;
     justify-content: center;
@@ -190,14 +192,14 @@ ul{
   
 }
 .button{
-border: 1px solid #f54707;
-background-color: var(--laranja);
-padding: 1% 3%;
+border: 1px solid #19a543;
+background-color: var(--verde);
+padding: 2% 4%;
 border-radius: 10px;
 color: var(--branco);
 text-decoration: none;
 transition: all 0.1s ease-in;
-font-size: 3.6vw;
+font-size: 4.6vw;
 } 
 .button:hover{
     padding: 1.1% 3.4%;
@@ -222,6 +224,8 @@ font-size: 3.6vw;
     text-align: center;
     padding-bottom: 5%;
     width: 80%;
+    font-size: 4.5vw;
+    font-weight: 500;
 }
 .porque-contratar span{
     color: var(--laranja);
@@ -295,7 +299,7 @@ font-size: 3.6vw;
     
 }
 .area-quem-somos h2{
-    color: var(--laranja);
+    color: var(--laranja-claro);
     padding-bottom: 0;
     font-weight: 800;
    
@@ -303,12 +307,12 @@ font-size: 3.6vw;
 .area-quem-somos p{
     color:var(--branco);
     padding: 3% 10%;
-    font-weight: 200;
+    font-weight: 300;
    
 }
 .area-quem-somos span{
     font-weight: 800;
-    color: var(--laranja);
+    color: var(--laranja-claro);
 }
 .area-icon{
 
@@ -329,8 +333,12 @@ font-size: 3.6vw;
     margin: 1%;
 }
 .card-quem-somos h2{
-    font-size: 3.2vw;
+    font-size: 4.2vw;
     color: var(--branco);
+}
+#titulo{
+    padding: 2%;
+    font-size: 6vw;
 }
 .nossos-servicos{
 
@@ -338,23 +346,25 @@ font-size: 3.6vw;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 10%;
+
+    padding-bottom: 2%;
 }
 .nossos-servicos h2{
     color: var(--laranja);
+    font-size: 4.5vw;
 }
 .nossos-servicos p{
   
-    padding: 2% 0;
+    padding: 2% 2%;
     color: var(--azul);
 }
 .nossos-servicos li{
-    font-size: 3.7vw;
-    padding: 1%;
+    font-size: 4.5vw;
+    padding: 1% 3%;
 }
 .nossos-servicos .subtitulo{    
     padding: 3% 0;
-    font-size: 3.5vw;
+    font-size: 5vw;
 }
 
 
@@ -375,7 +385,7 @@ font-size: 3.6vw;
             .area-etapas {
                 padding: 10%;
             }
-            
+           
             /* Estilo inicial para h2 e p */
             .etapas h2,
             .area-etapas p {
@@ -467,6 +477,14 @@ footer{
     background-color: #00121d;
     color: var(--branco);
 }
+footer a{
+    color: var(--branco);
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+footer a:hover{
+    color: var(--laranja);
+}
 footer p{
     text-align: center;
     font-size: 3vw;
@@ -503,13 +521,6 @@ footer p{
 .redessociais a{
     color: var(--laranja);
 }
-
-/*------------- LINKS ANIMAÇÕES *---------------------/
-
-
-
-
-/*------------- FIM LINKS ANIMAÇÕES *---------------------/
 
                         /*-------------------DESKTOP--------------------*/
 
@@ -584,10 +595,8 @@ ul{
 }
 .topo h2{
     font-size: 2.2vw;
-    
 }
 .topo p{
- 
     font-size: 1.3vw;
 }
 
@@ -607,12 +616,11 @@ ul{
     padding: 1%;
 }
 .area-topicos{
- 
     width: 20%;
     min-height: 43vw;
     margin: 1%;
-
 }
+
 .area-topicos img{
     width: 40%;
     padding: 3%;
@@ -652,8 +660,12 @@ ul{
 }
 .button{
     font-size: 1.4vw;
+    padding:1.2% 2%;
 }
-
+#titulo {
+    padding: 1.8%;
+    font-size: 2.5vw;
+}
 .nossos-servicos h2{
     font-size: 1.8vw;
     width: 50%;
@@ -713,26 +725,34 @@ ul{
 }
 .etapas h2{
     font-size: 2vw;
+    color: var(--laranja-claro);
 }
 .etapas p{
     font-size: 1.2vw;
     padding: 1% 0;
     
 }
+footer{
+    margin: 0;
+}
 footer p{
     font-size: 1vw;
+    
+    padding: 1%;
 }
 footer h2{
   font-size: 1.4vw;
+
 }
 .direito{
-    padding: 0;
+    padding-top: 3%;
 }
 .direito h2{
     font-size: 1.8vw;
 }
 .redessociais{
     font-size: 3vw;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
+    margin: 0;
 }
 }
